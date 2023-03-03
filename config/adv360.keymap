@@ -79,9 +79,9 @@
 
     default_layer {
       bindings = <
-        &kp ESC &kp N1    &kp N2   &kp N3   &kp N4     &kp N5 &mo 3                                                                       &kp N6 &kp N7 &kp N8    &kp N9   &kp N0   &kp MINUS &kp EQUAL
+        &kp ESC &kp N1    &kp N2   &kp N3   &kp N4     &kp N5 &mo 4                                                                       &kp N6 &kp N7 &kp N8    &kp N9   &kp N0   &kp MINUS &kp EQUAL
         &kp TAB   &kp Q     &kp W    &kp F    &kp P      &kp G  &none                                                                        &none &kp J  &kp L  &kp U     &kp Y    &kp SEMI    &kp BSLH
-        &kp ESC   &kp A     &kp R    &kp S    &kp T      &kp D  &none           &mo 1 &mo 1             &kp LGUI  &kp RCTRL           &none &kp H  &kp N  &kp E     &kp I    &kp O &kp SQT
+        &kp ESC   &kp A     &kp R    &kp S    &kp T      &kp D  &tog 3           &mo 1 &mo 1             &kp LGUI  &kp RCTRL           &none &kp H  &kp N  &kp E     &kp I    &kp O &kp SQT
         &kp LSHFT &kp Z     &kp X    &kp C    &kp V      &kp B         &none    &none     &kp HOME &none &none &kp PG_UP &none     &none           &kp K  &kp M  &kp COMMA &kp DOT  &kp FSLH &kp RSHFT
         &kp LCTRL     &kp LEFT_META &kp LALT &kp LBKT &kp RBKT                &ht LALT SPACE &kp BSPC   &kp DEL              &none &kp ENTER &flt 2 ENTER              &kp LEFT &kp UP  &kp DOWN &kp RIGHT &kp RCTRL
       >;
@@ -90,18 +90,27 @@
       bindings = <
         &kp ESC &kp F1   &kp F2   &kp F3   &kp F4     &kp F5 &trans                                                                       &kp F6 &kp F7 &kp F8 &kp F9 &kp F10 &kp F11 &kp F12
         &kp TAB   &kp EXCLAMATION     &kp AT_SIGN    &kp LBRC    &kp RBRC      &kp PIPE  &none                                                                        &none &trans  &kp KP_N7  &kp KP_N8    &kp KP_N9     &kp KP_MULTIPLY    &trans
-        &kp ESC   &kp HASH     &kp DLLR    &kp LPAR    &kp RPAR      &kp GRAVE  &none           &kp LCTRL &kp LALT             &kp LGUI  &kp RCTRL           &none &kp H  &kp KP_N4  &kp KP_N5    &kp KP_N6     &kp KP_PLUS     &trans
+        &kp ESC   &kp HASH     &kp DLLR    &kp LPAR    &kp RPAR      &kp GRAVE  &trans           &trans &trans             &kp LGUI  &kp RCTRL           &none &kp H  &kp KP_N4  &kp KP_N5    &kp KP_N6     &kp KP_PLUS     &trans
         &kp LSHFT &kp PRCNT     &kp CARET    &kp LBKT    &kp RBKT      &kp TILDE         &none    &none     &kp HOME &none &none &kp PG_UP &none     &none           &kp AMPS  &kp KP_N1  &kp KP_N2    &kp KP_N3     &kp KP_MINUS    &trans
         &kp LCTRL     &kp LEFT_META &kp LALT &kp LBKT &kp RBKT                &ht LALT SPACE &kp BSPC   &kp DEL              &none &kp ENTER &flt 2 ENTER              &kp LEFT &kp KP_N0  &kp DOWN &kp RIGHT &kp RCTRL
       >;
     };
     movement {
       bindings = <
-        &kp ESC &kp N1    &kp N2   &kp N3   &kp N4     &kp N5 &mo 3                                                                     &kp N6 &kp N7 &kp N8    &kp N9   &kp N0   &kp MINUS &kp EQUAL
+        &kp ESC &kp N1    &kp N2   &kp N3   &kp N4     &kp N5 &trans                                                                     &kp N6 &kp N7 &kp N8    &kp N9   &kp N0   &kp MINUS &kp EQUAL
         &kp TAB   &kp Q     &kp W    &kp F    &kp P      &kp G  &none                                                                        &none &kp J  &kp L  &kp U     &kp Y    &kp SEMI    &kp BSLH
-        &kp ESC   &kp A     &kp R    &kp S    &kp T      &kp D  &none           &kp LCTRL &kp LALT             &kp LGUI  &kp RCTRL           &none &kp H  &kp LEFT  &kp UP     &kp DOWN    &kp RIGHT &kp SQT
+        &kp ESC   &kp A     &kp R    &kp S    &kp T      &kp D  &trans           &kp LCTRL &kp LALT             &kp LGUI  &kp RCTRL           &none &kp H  &kp LEFT  &kp UP     &kp DOWN    &kp RIGHT &kp SQT
         &kp LSHFT &kp Z     &kp X    &kp C    &kp V      &kp B         &none    &none     &kp HOME &none &none &kp PG_UP &none     &none           &kp K  &kp M  &kp COMMA &kp DOT  &kp FSLH &kp RSHFT
         &kp LCTRL     &kp LEFT_META &kp LALT &kp LBKT &kp RBKT                &ht LALT SPACE &kp BSPC   &kp DEL              &none &kp ENTER &flt 2 ENTER              &macro_left_tab &kp UP  &kp DOWN &macro_right_tab &kp RCTRL
+      >;
+    };
+    gaming {
+      bindings = <
+        &kp ESC &kp F1   &kp F2   &kp F3   &kp F4     &kp F5 &trans                                                                       &kp F6 &kp F7 &kp F8 &kp F9 &kp F10 &kp F11 &kp F12
+        &kp TAB   &kp N1     &kp N2    &kp N3    &kp N4      &kp N5  &none                                                                        &none &kp J  &kp L  &kp U     &kp Y    &kp SEMI    &kp BSLH
+        &kp ESC   &kp Q     &kp W    &kp E    &kp R      &kp T  &tog 3           &trans &trans             &kp LGUI  &kp RCTRL           &none &kp H  &kp N  &kp E     &kp I    &kp O &kp SQT
+        &kp LSHFT &kp A     &kp S    &kp D    &kp F      &kp G         &none    &none     &kp HOME &none &none &kp PG_UP &none     &none           &kp K  &kp M  &kp COMMA &kp DOT  &kp FSLH &kp RSHFT
+        &kp LCTRL     &kp Z &kp X &kp C &kp V                &kp SPACE &kp B   &kp P              &none &kp ENTER &flt 2 ENTER              &kp LEFT &kp UP  &kp DOWN &kp RIGHT &kp RCTRL
       >;
     };
     mod {
