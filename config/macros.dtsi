@@ -39,4 +39,4 @@
     label = "macro_vsplit";
     #binding-cells = <0>;
     bindings = <&kp SPACE>, <&kp W>, <&kp V>;
-  }
+  };
