@@ -49,17 +49,17 @@
     };
     macro_left_tab: macro_left_tab {
       compatible = "zmk,behavior-macro";
-      label = "macro_vsplit";
+      label = "macro_left_tab";
       #binding-cells = <0>;
       wait-ms = <10>;
-      bindings = <&macro_press &kp LCTRL>, <&macro_press &kp LSHIFT>, <&kp TAB>, <&macro_release &kp LSHIFT>, <&macro_release &kp LCTRL>;
+      bindings = <&kb LC(LS(TAB))>;
     };
     macro_right_tab: macro_right_tab {
       compatible = "zmk,behavior-macro";
-      label = "macro_vsplit";
+      label = "macro_right_tab";
       #binding-cells = <0>;
       wait-ms = <10>;
-      bindings = <&macro_press &kp LCTRL>, <&kp TAB>, <&macro_release &kp LCTRL>;
+      bindings = <&kb LC(TAB)>;
     };
   };
 
