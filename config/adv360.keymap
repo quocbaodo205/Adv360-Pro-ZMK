@@ -3,10 +3,11 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/rgb.h>
 #include <dt-bindings/zmk/backlight.h>
-#include "macros.dtsi"
 
 / {
     behaviors {
+      #include "macros.dtsi"
+
       hm: homerow_mods {
           compatible = "zmk,behavior-hold-tap";
           label = "HOMEROW_MODS";
@@ -25,7 +26,7 @@
             tapping-term-ms = <120>;
             quick-tap-ms = <200>;
             bindings = <&kp>, <&kp>;
-          }
+          };
     
       flt: fast_layer_tap {
             compatible = "zmk,behavior-hold-tap";
@@ -35,18 +36,19 @@
             tapping-term-ms = <120>;
             quick-tap-ms = <200>;
             bindings = <&mo>, <&kp>;
-          }
-    };
+          };
+    
+      combos {
+        compatible = "zmk,combo";
+        combo_vsplit {
+          timeout-ms = <50>;
+          key-positions = <0 1>;
+          layers = <0>;
+          bindings = <&macro_vsplit>;
+        };
 
-  combos {
-    compatible = "zmk,combo";
-    combo_vsplit {
-      timeout-ms = <50>;
-      key-positions = <0 1>;
-      layers = <0>;
-      bindings = <&macro_vsplit>;
+      };
     };
-  };
 
   keymap {
     compatible = "zmk,keymap";
