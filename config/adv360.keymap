@@ -20,7 +20,7 @@
     };
 
   combos {
-    compatible = "zmk,keymap";
+    compatible = "zmk,combo";
     combo_vsplit {
       timeout-ms = <50>;
       key-positions = <0 1>;
