@@ -52,14 +52,14 @@
       label = "macro_left_tab";
       #binding-cells = <0>;
       wait-ms = <10>;
-      bindings = <&kb LC(LS(TAB))>;
+      bindings = <&kp LC(LS(TAB))>;
     };
     macro_right_tab: macro_right_tab {
       compatible = "zmk,behavior-macro";
       label = "macro_right_tab";
       #binding-cells = <0>;
       wait-ms = <10>;
-      bindings = <&kb LC(TAB)>;
+      bindings = <&kp LC(TAB)>;
     };
   };
 
