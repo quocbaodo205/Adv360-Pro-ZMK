@@ -37,17 +37,17 @@
             quick-tap-ms = <200>;
             bindings = <&mo>, <&kp>;
           };
-    
-      combos {
-        compatible = "zmk,combo";
-        combo_vsplit {
-          timeout-ms = <50>;
-          key-positions = <0 1>;
-          layers = <0>;
-          bindings = <&macro_vsplit>;
-        };
 
       };
+    };
+
+  combos {
+    compatible = "zmk,combo";
+    combo_vsplit {
+      timeout-ms = <50>;
+      key-positions = <0 1>;
+      layers = <0>;
+      bindings = <&macro_vsplit>;
     };
 
   keymap {
