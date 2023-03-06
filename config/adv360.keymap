@@ -115,7 +115,7 @@
         &kp TAB   &kp Q     &kp W    &kp F    &kp P      &kp G  &none                                                                        &none &kp J  &kp L  &kp U     &kp Y    &kp SEMI    &kp BSLH
         &kp ESC   &kp A     &kp R    &kp S    &kp T      &kp D  &trans           &kp LCTRL &kp LALT             &kp LGUI  &kp RCTRL           &none &kp H  &kp LEFT  &kp UP     &kp DOWN    &kp RIGHT &kp SQT
         &kp LSHFT &kp Z     &kp X    &kp C    &kp V      &kp B         &none    &none     &kp HOME &none &none &kp PG_UP &none     &none           &kp K  &kp M  &kp COMMA &kp DOT  &kp FSLH &kp RSHFT
-        &kp LCTRL     &kp LEFT_META &kp LALT &kp LBKT &kp RBKT                &ht LALT SPACE &kp BSPC   &kp DEL              &none &kp ENTER &flt 2 ENTER              &macro_left_tab &macro_vim_page_down  &macro_vim_page_up  &macro_right_tab &kp RCTRL
+        &kp LCTRL     &kp LEFT_META &kp LALT &kp LBKT &kp RBKT                &ht LALT SPACE &kp BSPC   &kp DEL              &none &kp ENTER &flt 2 ENTER              &macro_left_tab &macro_vim_page_up  &macro_vim_page_down  &macro_right_tab &kp RCTRL
       >;
     };
     gaming {
