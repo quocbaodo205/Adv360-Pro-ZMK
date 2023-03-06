@@ -61,6 +61,20 @@
       wait-ms = <10>;
       bindings = <&kp LC(TAB)>;
     };
+    macro_vim_page_down: macro_vim_page_down {
+      compatible = "zmk,behavior-macro";
+      label = "macro_vim_page_down";
+      #binding-cells = <0>;
+      wait-ms = <10>;
+      bindings = <&kp LC(D)>;
+    };
+    macro_vim_page_up: macro_vim_page_up {
+      compatible = "zmk,behavior-macro";
+      label = "macro_vim_page_up";
+      #binding-cells = <0>;
+      wait-ms = <10>;
+      bindings = <&kp LC(U)>;
+    };
   };
 
 
@@ -89,10 +103,10 @@
     symbol {
       bindings = <
         &kp ESC &kp F1   &kp F2   &kp F3   &kp F4     &kp F5 &trans                                                                       &kp F6 &kp F7 &kp F8 &kp F9 &kp F10 &kp F11 &kp F12
-        &kp TAB   &kp EXCLAMATION     &kp AT_SIGN    &kp LBRC    &kp RBRC      &kp PIPE  &none                                                                        &none &trans  &kp KP_N7  &kp KP_N8    &kp KP_N9     &kp KP_MULTIPLY    &trans
-        &kp ESC   &kp HASH     &kp DLLR    &kp LPAR    &kp RPAR      &kp GRAVE  &trans           &trans &trans             &kp LGUI  &kp RCTRL           &none &kp H  &kp KP_N4  &kp KP_N5    &kp KP_N6     &kp KP_PLUS     &trans
-        &kp LSHFT &kp PRCNT     &kp CARET    &kp LBKT    &kp RBKT      &kp TILDE         &none    &none     &kp HOME &none &none &kp PG_UP &none     &none           &kp AMPS  &kp KP_N1  &kp KP_N2    &kp KP_N3     &kp KP_MINUS    &trans
-        &kp LCTRL     &kp LEFT_META &kp LALT &kp LBKT &kp RBKT                &ht LALT SPACE &kp BSPC   &kp DEL              &none &kp ENTER &flt 2 ENTER              &kp LEFT &kp KP_N0  &kp DOWN &kp RIGHT &kp RCTRL
+        &kp TAB   &kp EXCLAMATION     &kp AT_SIGN    &kp LBRC    &kp RBRC      &kp PIPE  &none                                                                        &none &kp J  &kp N7  &kp N8    &kp N9     &kp KP_MULTIPLY    &trans
+        &kp ESC   &kp HASH     &kp DLLR    &kp LPAR    &kp RPAR      &kp GRAVE  &tog 3           &mo 1 &mo 1             &kp LGUI  &kp RCTRL           &none &kp H  &kp N4  &kp N5    &kp N6     &kp KP_PLUS     &trans
+        &kp LSHFT &kp PRCNT     &kp CARET    &kp LBKT    &kp RBKT      &kp TILDE         &none    &none     &kp HOME &none &none &kp PG_UP &none     &none           &kp AMPS  &kp N1  &kp N2    &kp N3     &kp KP_MINUS    &trans
+        &kp LCTRL     &kp LEFT_META &kp LALT &kp LBKT &kp RBKT                &ht LALT SPACE &kp BSPC   &kp DEL              &none &kp ENTER &flt 2 ENTER              &kp LEFT &kp N0  &kp DOWN &kp RIGHT &kp RCTRL
       >;
     };
     movement {
@@ -101,7 +115,7 @@
         &kp TAB   &kp Q     &kp W    &kp F    &kp P      &kp G  &none                                                                        &none &kp J  &kp L  &kp U     &kp Y    &kp SEMI    &kp BSLH
         &kp ESC   &kp A     &kp R    &kp S    &kp T      &kp D  &trans           &kp LCTRL &kp LALT             &kp LGUI  &kp RCTRL           &none &kp H  &kp LEFT  &kp UP     &kp DOWN    &kp RIGHT &kp SQT
         &kp LSHFT &kp Z     &kp X    &kp C    &kp V      &kp B         &none    &none     &kp HOME &none &none &kp PG_UP &none     &none           &kp K  &kp M  &kp COMMA &kp DOT  &kp FSLH &kp RSHFT
-        &kp LCTRL     &kp LEFT_META &kp LALT &kp LBKT &kp RBKT                &ht LALT SPACE &kp BSPC   &kp DEL              &none &kp ENTER &flt 2 ENTER              &macro_left_tab &kp UP  &kp DOWN &macro_right_tab &kp RCTRL
+        &kp LCTRL     &kp LEFT_META &kp LALT &kp LBKT &kp RBKT                &ht LALT SPACE &kp BSPC   &kp DEL              &none &kp ENTER &flt 2 ENTER              &macro_left_tab &macro_vim_page_down  &macro_vim_page_up  &macro_right_tab &kp RCTRL
       >;
     };
     gaming {
