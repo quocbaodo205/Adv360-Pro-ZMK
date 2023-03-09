@@ -124,7 +124,7 @@
         &kp TAB   &kp N1     &kp N2    &kp N3    &kp N4      &kp N5  &none                                                                        &none &kp J  &kp L  &kp U     &kp Y    &kp SEMI    &kp BSLH
         &kp ESC   &kp Q     &kp W    &kp E    &kp R      &kp T  &tog 3           &trans &trans             &kp LGUI  &kp RCTRL           &none &kp H  &kp N  &kp E     &kp I    &kp O &kp SQT
         &kp LSHFT &kp A     &kp S    &kp D    &kp F      &kp G         &none    &none     &kp HOME &none &none &kp PG_UP &none     &none           &kp K  &kp M  &kp COMMA &kp DOT  &kp FSLH &kp RSHFT
-        &kp LCTRL     &kp Z &kp X &kp C &kp V                &kp SPACE &kp B   &kp P              &none &kp ENTER &flt 2 ENTER              &kp LEFT &kp UP  &kp DOWN &kp RIGHT &kp RCTRL
+        &kp LCTRL     &kp Z &kp X &kp C &kp V                &ht LALT SPACE &kp B   &kp P              &none &kp ENTER &flt 2 ENTER              &kp LEFT &kp UP  &kp DOWN &kp RIGHT &kp RCTRL
       >;
     };
     mod {
